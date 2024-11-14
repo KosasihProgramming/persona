@@ -183,7 +183,8 @@ const Detail = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full mt-10 flex flex-col justify-start items-start">
+            {/* <div className="border border-white rounded-lg p-4 flex flex-col justify-start items-start"> */}
+            <div className="w-full mt-10 flex flex-col justify-start items-start ">
               <div className="w-full flex justify-between items-start">
                 <h3 className="text-2xl font-medium text-white">
                   Project description
@@ -214,6 +215,7 @@ const Detail = () => {
                   </ul>
                 </div>
               </div>
+              {/* </div> */}
             </div>
           </div>
         </Container>
