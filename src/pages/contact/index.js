@@ -26,7 +26,7 @@ export const ContactUs = () => {
       number = "62" + email.slice(1);
     }
     // Buat link WhatsApp
-    const whatsappLink = `https://wa.me/${number}?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/6281278961500?text=${encodeURIComponent(
       `Nama: ${name}\nPesan: ${message}`
     )}`;
 

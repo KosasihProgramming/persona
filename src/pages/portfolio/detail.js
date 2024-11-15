@@ -146,7 +146,7 @@ const Detail = () => {
   };
 
   return (
-    <div className="w-full h-[100vh] ">
+    <div className="md:px-16 px-6 flex justify-center items-start w-full ">
       <HelmetProvider>
         <Container className="About-header">
           <Helmet>
@@ -160,9 +160,9 @@ const Detail = () => {
               <hr className="t_border my-4 ml-0 text-left" />
             </Col>
           </Row>
-          <div className="flex flex-col w-full px-14 ">
+          <div className="flex flex-col w-full ">
             <div className="mb-5 flex justify-between items-start w-full ">
-              <div className="flex  justify-center gap-6 items-center w-[100%] ">
+              <div className="flex  justify-center gap-6 items-center w-[100%] flex-col md:flex-row  ">
                 {dataImg.map((a, index) => (
                   <>
                     <div className="flex flex-col items-start justify-between gap-4">
@@ -185,21 +185,21 @@ const Detail = () => {
             </div>
             {/* <div className="border border-white rounded-lg p-4 flex flex-col justify-start items-start"> */}
             <div className="w-full mt-10 flex flex-col justify-start items-start ">
-              <div className="w-full flex justify-between items-start">
+              <div className="w-full flex justify-between items-start flex-col md:flex-row ">
                 <h3 className="text-2xl font-medium text-white">
                   Project description
                 </h3>
-                <div className="w-[50%] flex p-4 border border-white rounded-md text-base">
+                <div className="w-full md:w-[50%] flex p-4 border border-white rounded-md text-sm mt-4 md:mt-0 md:text-base">
                   {description}
                 </div>
               </div>
             </div>
             <div className="w-full mt-4 flex flex-col justify-start items-start mb-[2rem]">
-              <div className="w-full flex justify-between items-start">
+              <div className="w-full flex justify-between items-start flex-col md:flex-row ">
                 <h3 className="text-2xl font-medium text-white">
                   Technical Info
                 </h3>
-                <div className="w-[50%] flex flex-col p-4 border border-white rounded-md text-white text-base">
+                <div className="w-full md:w-[50%] flex p-4 border border-white rounded-md text-sm mt-4 md:mt-0 md:text-base">
                   <ul className="list-disc list-inside space-y-2">
                     {features.map((feature, index) => (
                       <li key={index}>{feature}</li>

@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import GlassCard from "../../components/themetoggle/card";
 export const Portfolio = () => {
   return (
-    <div className="px-16">
+    <div className="md:px-16 px-6 flex justify-center items-start w-full ">
       <HelmetProvider>
         <Container className="About-header">
           <Helmet>
@@ -28,7 +28,7 @@ export const Portfolio = () => {
               <hr className="t_border my-4 ml-0 text-left" />
             </Col>
           </Row>
-          <div className="mb-5 flex justify-between items-start w-full">
+          <div className="mb-5 flex flex-col md:flex-row justify-between items-start md:items-start w-full pl-4 md:pl-0 ">
             <div className="flex flex-col justify-start items-center w-[30%] ">
               <GlassCard
                 img={emplImg}
@@ -52,7 +52,7 @@ export const Portfolio = () => {
               />
             </div>
 
-            <div className="flex flex-col justify-start items-center w-[30%] ">
+            <div className="flex  flex-col justify-start items-center w-[30%] ">
               <GlassCard
                 img={trackImg}
                 title={"Tracker Location"}

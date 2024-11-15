@@ -9,10 +9,11 @@ import {
   skills,
   services,
 } from "../../content_option";
+import Skill from "./skills";
 
 export const About = () => {
   return (
-    <div className="px-16">
+    <div className="md:px-16 px-6 flex justify-center items-start w-full ">
       <HelmetProvider>
         <Container className="About-header">
           <Helmet>

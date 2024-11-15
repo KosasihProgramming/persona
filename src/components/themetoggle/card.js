@@ -7,7 +7,7 @@ function GlassCard(props) {
   };
   return (
     <div
-      className="max-w-[35rem] mb-12 mx-auto p-4 text-center text-white border border-blue-400  hover:translate-y-[-2rem] duration-300"
+      className=" w-[15rem] md:max-w-[35rem] mb-12 mx-auto p-4 text-center text-white border border-blue-400  hover:translate-y-[-2rem] duration-300"
       style={{
         background: "rgba(255, 255, 255, 0.14)",
         borderRadius: "16px",
@@ -21,11 +21,11 @@ function GlassCard(props) {
         className="w-full object-cover mx-auto mb-4"
         alt="Portfolio"
       />
-      <h2 className="text-xl font-semibold mb-2">{props.title}</h2>
-      <p className="text-sm text-justify mb-4">
+      <h2 className="text-base md:text-xl font-semibold mb-2">{props.title}</h2>
+      <p className="md:text-sm text-justify mb-4 text-xs">
         {truncateDescription(props.desc)}
       </p>
-      <p className="text-blue-200 text-left font-medium">{props.info}</p>
+      <p className="text-blue-200 text-left font-medium  text-xs md:text-sm">{props.info}</p>
       <div className="flex justify-center gap-4 mt-4">
         <Link
           to={props.url}
