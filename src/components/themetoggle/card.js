@@ -7,7 +7,7 @@ function GlassCard(props) {
   };
   return (
     <div
-      className=" w-[15rem] md:max-w-[35rem] mb-12 mx-auto p-4 text-center text-white border border-blue-400  hover:translate-y-[-2rem] duration-300"
+      className=" w-[15rem] md:w-[20rem] mb-12 mx-auto p-4 text-center text-white border border-blue-400  hover:translate-y-[-2rem] duration-300"
       style={{
         background: "rgba(255, 255, 255, 0.14)",
         borderRadius: "16px",
